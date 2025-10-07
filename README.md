@@ -1,6 +1,6 @@
 # Easily create subtitles file and a subbed video file.
 
-A tool for macOS to easily transcribe video files that are audio-only using Whisper from OpenAI. It can batch-process an entire directory, generating both an `.srt` subtitle file and a new video file with embedded soft subtitles.
+A tool for macOS to easily transcribe video files using Whisper from OpenAI. It can batch-process an entire directory, generating both an `.srt` subtitle file and a new video file with embedded soft subtitles.
 
 **Special Note:** The first time you run **1-Allow-Run.command**, your Mac may block it because it’s not from an Apple-signed developer.  
 
