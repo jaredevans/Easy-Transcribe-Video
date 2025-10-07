@@ -5,7 +5,7 @@ This simple tool lets you **automatically create free subtitles** for your video
 - ✅ A `.srt` subtitles file (usable in most video players)  
 - ✅ A new video file with subtitles already embedded (perfect for sharing)
 
-Everything runs **locally on your Mac** — no internet transcription services required.
+Everything runs **locally on your Mac** — no internet transcription services required.  Download the zip file from the **release** located on the right side of this page then unzip it.
 
 ---
 
