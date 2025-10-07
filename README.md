@@ -1,4 +1,4 @@
-# Whisper Transcription CLI
+# Create subtitles file and a subbed video file.
 
 A self-contained command-line tool for macOS to easily transcribe video files using Whisper.cpp. It can process a single video file or batch-process an entire directory, generating both an `.srt` subtitle file and a new video file with embedded soft subtitles.
 
