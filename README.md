@@ -1,6 +1,6 @@
 # 🎬 Easily Add Subtitles to Your Videos (Works on Mac Only)
 
-This simple tool lets you **automatically create subtitles** for your videos — even if the video is in a foreign language. It generates:
+This simple tool lets you **automatically create free subtitles** for your videos — even if the video is in a foreign language. It generates:
 
 - ✅ A `.srt` subtitles file (usable in most video players)  
 - ✅ A new video file with subtitles already embedded (perfect for sharing)
