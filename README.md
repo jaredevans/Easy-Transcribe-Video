@@ -1,4 +1,4 @@
-# 🎬 Easily Add Subtitles to Your Videos (Mac)
+# 🎬 Easily Add Subtitles to Your Videos (Works on Mac Only)
 
 This simple tool lets you **automatically create subtitles** for your videos — even if the video is in a foreign language. It generates:
 
