@@ -110,7 +110,7 @@ This project bundles these open-source tools:
 ## 💡 Tips
 
 - You can run the transcriber multiple times; it will **skip any videos already processed**.  
-- **VLC** usually shows subtitles automatically. In **QuickTime**, select the subtitle track manually if needed.
+- In **VLC** and **QuickTime**, select the subtitle track manually if needed.
 
 ---
 
