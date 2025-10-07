@@ -1,73 +1,120 @@
-# Easily create subtitles file and a subbed video file.
+# 🎬 Easily Add Subtitles to Your Videos (Mac)
 
-A tool for macOS to easily transcribe video files using Whisper from OpenAI. It can batch-process an entire directory, generating both an `.srt` subtitle file and a new video file with embedded soft subtitles.
+This simple tool lets you **automatically create subtitles** for your videos — even if the video is in a foreign language. It generates:
 
-**Special Note:** The first time you run **1-Allow-Run.command**, your Mac may block it because it’s not from an Apple-signed developer.  
+- ✅ A `.srt` subtitles file (usable in most video players)  
+- ✅ A new video file with subtitles already embedded (perfect for sharing)
 
+Everything runs **locally on your Mac** — no internet transcription services required.
+
+---
+
+## 🚨 First-Time Setup (Important)
+
+The first time you run `1-Allow-Run.command`, macOS may block it because it’s not from an Apple-signed developer.  
 To allow it to run:
 
 1. Open **System Settings → Privacy & Security**.  
-2. Scroll to the bottom and look for a message about **1-Allow-Run.command** being blocked.  
-3. Click **“Allow Anyway”**, then run the file again.  
-4. When prompted, enter your Mac password to confirm.
+2. Scroll to the bottom. You’ll see a message that `1-Allow-Run.command` was blocked.  
+3. Click **“Allow Anyway”**.  
+4. Run `1-Allow-Run.command` again.  
+5. When asked, enter your Mac password to approve it.
 
-After this, the script will run normally.
+After this, you won’t need to repeat these steps.
 
-## Features
+---
 
--   **Transcribe or Translate**: Transcribes audio from video files into English text. If the source language is not English, it will translate it to English.
--   **SRT and Subtitled Video Output**: For each video, it generates a `.srt` subtitle file and a `_subbed.mp4` file with embedded soft subtitles.
--   **Automatic Language Detection**: Automatically detects the language of the audio.
--   **Smart Processing**: Skips videos that already have a corresponding `.srt` file or are `_subbed` versions.
--   **Self-Contained**: Includes all necessary binaries (`ffmpeg`, `whisper-cli`) and scripts.  Only the model needs to be download.
+## ✨ What It Can Do
 
-## Prerequisites
+- 📝 **Transcribe & Translate** — Converts spoken audio into English text. If the audio is in another language, it automatically translates it to English.  
+- 🧠 **Automatic Language Detection** — No need to manually specify the language.  
+- 💬 **Generates Two Outputs** — A `.srt` file and a `_subbed.mp4` file with subtitles embedded.  
+- 🧼 **Smart Skipping** — Videos that already have subtitles won’t be processed again.  
+- 💻 **No Installation Required** — All tools are included. You only need to download the model once.
 
--   macOS
+---
 
-## Installation & Setup
+## 🧠 Before You Start
 
-The project is designed to be easy to set up and to get started with. Follow these steps in order:
+You’ll need:
 
-1.  **Allow Execution**: Double-click on `1-Allow-Run.command`. This script will make all the necessary scripts and binaries executable. You may need to grant permission in System Settings -> Privacy & Security.
+- A Mac running macOS  
+- At least **3 GB of free space** (to store the model)  
+- A video file (e.g., `.mp4`, `.mov`) to transcribe
 
-2.  **Download the Model**: Double-click on `2-Download-Model.command`. This will download the `ggml-large-v2.bin` Whisper model (approximately 2.9 GB) and place it in the `models/` directory.  This will take a while, be patient.
+---
 
-## Usage
+## 🛠️ Setup (One-Time)
 
-1.  **Add Videos**: Add your video files (e.g., `.mp4`, `.mov`) into the `video/` directory.
+Follow these steps to prepare everything:
 
-2.  **Run Transcription**: Simply double-click `Transcribe.command`.
-    -   It will scan the `video/` directory and transcribe any videos that do not already have an `.srt` file.
+1. **Allow the Scripts to Run**  
+   👉 Double-click `1-Allow-Run.command`.  
+   This removes macOS security restrictions and sets the correct file permissions.
 
-3.  **Find Output Files**: The output files (`.srt` and `_subbed.mp4`) will be created in the same directory as the source video files.
+2. **Download the Whisper Model**  
+   👉 Double-click `2-Download-Model.command`.  
+   This will download the `ggml-large-v2.bin` model (~2.9 GB) into the `models/` folder.  
+   This may take a few minutes — be patient.
 
-## How It Works
+---
 
-The transcription process follows these steps for each video file:
+## ▶️ How to Use
 
-1.  **Audio Extraction**: `ffmpeg` extracts the audio from the video file into a temporary 16kHz mono WAV file.
-2.  **Language Detection**: `whisper-cli` analyzes the audio to auto-detect the spoken language.
-3.  **Transcription/Translation**: `whisper-cli` processes the audio using the downloaded model to generate subtitles. If the detected language is English, it transcribes it. If it's another language, it translates it to English.
-4.  **Subtitle Embedding**: `ffmpeg` creates a new MP4 file (`<video_name>_subbed.mp4`) by copying the original video and audio streams and embedding the newly generated `.srt` file as a soft subtitle track. Quicktime player and VLC allows you to select the English subtitles track to be displayed on video.
+1. **Add Your Videos**  
+   Drop any `.mp4`, `.mov`, or similar files into the `video/` folder.
 
-## Folder Structure
+2. **Run the Transcriber**  
+   👉 Double-click `Transcribe.command`.  
+   It will scan the `video/` folder and process any videos that don’t already have subtitles.
 
+3. **Get Your Results**  
+   - You’ll get a `.srt` file next to the original video.  
+   - You’ll also get a `<filename>_subbed.mp4` file with the subtitles embedded.  
+   You can open it in **QuickTime** or **VLC** to view subtitles.
+
+---
+
+## 🧠 What Happens Behind the Scenes
+
+For each video:
+
+1. 🎧 **Audio Extraction** — `ffmpeg` extracts audio into a temporary file.  
+2. 🌍 **Language Detection** — `whisper-cli` figures out which language is spoken.  
+3. ✍️ **Transcription / Translation** — Whisper generates English subtitles.  
+4. 💬 **Subtitle Embedding** — `ffmpeg` creates a `_subbed.mp4` file with soft subtitles.
+
+---
+
+## 📁 Folder Overview
 ```
 /
-├── 1-Allow-Run.command      # Makes scripts and binaries executable.
-├── 2-Download-Model.command # Downloads the Whisper model.
-├── Transcribe.command       # The main script to run transcriptions.
-├── bin/                     
-│   └── ffmpeg, whisper-cli, & shell scripts.
-├── models/                  # Whisper model                  
-└── video/                   # Directory for your video files.
+├── 1-Allow-Run.command       # Step 1: Allow scripts to run
+├── 2-Download-Model.command  # Step 2: Download the Whisper model
+├── Transcribe.command        # Step 3: Transcribe your videos
+├── bin/                      # Tools (ffmpeg, whisper-cli, scripts)
+├── models/                   # Whisper model file
+└── video/                    # Place your videos here
 ```
+---
 
-## Dependencies
+## 🧩 Included Tools
 
-This project bundles the following open-source tools:
+This project bundles these open-source tools:
 
--   [Whisper.cpp](https://github.com/ggerganov/whisper.cpp) (`whisper-cli`)
--   [ffmpeg](https://ffmpeg.org/)
+- [Whisper.cpp](https://github.com/ggerganov/whisper.cpp) — for transcription & translation  
+- [ffmpeg](https://ffmpeg.org/) — for audio extraction & video processing
 
+---
+
+## 💡 Tips
+
+- You can run the transcriber multiple times; it will **skip any videos already processed**.  
+- **VLC** usually shows subtitles automatically. In **QuickTime**, select the subtitle track manually if needed.
+
+---
+
+## ❤️ Why This Exists
+
+Many videos — especially older or foreign-language content — don’t have subtitles.  
+This tool makes it easy for **anyone**, especially Deaf people, to **generate their own accurate subtitles** quickly and for free, entirely on their Mac.
