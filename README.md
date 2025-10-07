@@ -73,6 +73,8 @@ Follow these steps to prepare everything:
    - You’ll also get a `<filename>_subbed.mp4` file with the subtitles embedded.  
    You can open it in **QuickTime** or **VLC** to view subtitles.
 
+**Note:** There is a test.mp4 in the video directory you can use to test the transcribing.
+
 ---
 
 ## 🧠 What Happens Behind the Scenes
