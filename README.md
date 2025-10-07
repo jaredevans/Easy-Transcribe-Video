@@ -116,5 +116,5 @@ This project bundles these open-source tools:
 
 ## ❤️ Why This Exists
 
-Many videos — especially older or foreign-language content — don’t have subtitles.  
+Many videos don’t have subtitles.  
 This tool makes it easy for **anyone**, especially Deaf people, to **generate their own accurate subtitles** quickly and for free, entirely on their Mac.
