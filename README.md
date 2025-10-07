@@ -31,7 +31,7 @@ The project is designed to be easy to set up and to get started with. Follow the
 
 1.  **Allow Execution**: Double-click on `1-Allow-Run.command`. This script will make all the necessary scripts and binaries executable. You may need to grant permission in System Settings -> Privacy & Security.
 
-2.  **Download the Model**: Double-click on `2-Download-Model.command`. This will download the `ggml-large-v2.bin` Whisper model (approximately 2.9 GB) and place it in the `models/` directory.
+2.  **Download the Model**: Double-click on `2-Download-Model.command`. This will download the `ggml-large-v2.bin` Whisper model (approximately 2.9 GB) and place it in the `models/` directory.  This will take a while, be patient.
 
 ## Usage
 
