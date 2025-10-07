@@ -2,7 +2,16 @@
 
 A self-contained command-line tool for macOS to easily transcribe video files using Whisper.cpp. It can process a single video file or batch-process an entire directory, generating both an `.srt` subtitle file and a new video file with embedded soft subtitles.
 
-**Note: 1-Allow-Run.command may be initially blocked by your Mac** since it's not an Apple signed app.  Simply go to "Settings -> Privacy & Security", scroll down to the bottom and you'll see Allow applications then allow it to run.  You will be asked for your password before it will proceed to run the app.
+**Note:** The first time you run **1-Allow-Run.command**, your Mac may block it because it’s not from an Apple-signed developer.  
+
+To allow it:
+
+1. Open **System Settings → Privacy & Security**.  
+2. Scroll to the bottom and look for a message about **1-Allow-Run.command** being blocked.  
+3. Click **“Allow Anyway”**, then run the file again.  
+4. When prompted, enter your Mac password to confirm.
+
+After this, the script will run normally.
 
 ## Features
 
