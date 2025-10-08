@@ -1,4 +1,5 @@
-# 🎬 Easily Add Subtitles to Your Videos (Works on M1,2,3,4,5 Mac Silicon Only)
+# 🎬 Easily Add Subtitles to Your Videos ##
+(For M1,2,3,4,5 Mac Silicon Only, not older Intel-based Macs)
 
 This simple tool lets you **automatically create free subtitles** for your videos — even if the video is in a foreign language. It generates:
 
