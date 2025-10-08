@@ -54,7 +54,7 @@ Follow these steps to prepare everything:
 
    After this, you won’t need to repeat these steps.
 
-2. **Download the Whisper Model**  
+2. **Download the Whisper AI Model**  
    👉 Double-click `2-Download-Model.command`.  
    This will download the `ggml-large-v2.bin` model (~2.9 GB) into the `models/` folder.  
    This may take a few minutes — be patient.
