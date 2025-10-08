@@ -14,7 +14,7 @@ Many videos don’t have subtitles. This tool makes it easy for anyone, **especi
 
 ---
 
-## 🚨 First-Time Setup (Important)
+## 🚨 First-Time Setup (Do only once)
 
 ## >> Download the zip file from the **Releases** located on the right side of this page then unzip it. ##
 
