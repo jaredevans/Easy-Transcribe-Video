@@ -14,23 +14,6 @@ Many videos don’t have subtitles. This tool makes it easy for anyone, **especi
 
 ---
 
-## 🚨 First-Time Setup (Do only once)
-
-## >> Download the zip file from the **Releases** located on the right side of this page then unzip it. ##
-
-The first time you run `1-Allow-Run.command`, macOS may block it because it’s not from an Apple-signed developer.  
-To allow it to run:
-
-1. Open **System Settings → Privacy & Security**.  
-2. Scroll to the bottom. You’ll see a message that `1-Allow-Run.command` was blocked.  
-3. Click **“Allow Anyway”**.  
-4. Run `1-Allow-Run.command` again.  
-5. When asked, enter your Mac password to approve it.
-
-After this, you won’t need to repeat these steps.
-
----
-
 ## ✨ What It Can Do
 
 - 📝 **Transcribe or Translate** — Converts spoken audio into English text. If the audio is in another language, it automatically translates it to English.  
@@ -45,9 +28,8 @@ After this, you won’t need to repeat these steps.
 
 You’ll need:
 
-- A Mac running macOS  
-- At least **3 GB** of free space (to store the model)  
-- A video file (e.g., `.mp4`, `.mov`) to transcribe
+- Apple Silcion Mac (not Intel-based Mac)
+- At least **3 GB of free space** to store the Whisper AI model  
 
 ---
 
@@ -55,9 +37,22 @@ You’ll need:
 
 Follow these steps to prepare everything:
 
+## Download the zip file from the **Releases** (located on the right side of this page) then unzip it. ##
+
 1. **Allow the Scripts to Run**  
    👉 Double-click `1-Allow-Run.command`.  
-   This removes macOS security restrictions and sets the correct file permissions.
+   This lifts the macOS security restrictions and sets the correct file permissions.
+   The first time you run `1-Allow-Run.command`, macOS may block it because it’s not from an Apple-signed developer.  
+
+   To allow it to run:
+
+   . Open **System Settings → Privacy & Security**.  
+   . Scroll to the bottom. You’ll see a message that `1-Allow-Run.command` was blocked.  
+   . Click **“Allow Anyway”**.  
+   . Run `1-Allow-Run.command` again.  
+   . When asked, enter your Mac password to approve it.
+
+   After this, you won’t need to repeat these steps.
 
 2. **Download the Whisper Model**  
    👉 Double-click `2-Download-Model.command`.  
