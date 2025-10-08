@@ -3,8 +3,8 @@
 
 This simple tool lets you **automatically create subtitles** for your videos — even if the video is in a foreign language. It generates:
 
-- ✅ A `.srt` subtitles file (usable in most video players)  
-- ✅ A new video file with subtitles already embedded, called soft subtitle track that can be enabled inside the video player.
+- ✅ A subtitles `.srt` file (usable in most video players)  
+- ✅ A new video file with soft English subtitle track that can be enabled inside the video player.
 
 Everything runs locally on your Mac for your privacy — no internet paid transcription services required.  
 
