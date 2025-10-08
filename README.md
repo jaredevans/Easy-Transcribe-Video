@@ -1,18 +1,22 @@
 # 🎬 Easily Add Subtitles to Your Videos ##
 (For M1,2,3,4,5 Mac Silicon Only, not older Intel-based Macs)
 
-This simple tool lets you **automatically create free subtitles** for your videos — even if the video is in a foreign language. It generates:
+This simple tool lets you **automatically create subtitles** for your videos — even if the video is in a foreign language. It generates:
 
 - ✅ A `.srt` subtitles file (usable in most video players)  
-- ✅ A new video file with subtitles already embedded
+- ✅ A new video file with subtitles already embedded, called soft subtitle track that can be enabled inside the video player.
 
-Everything runs **locally on your Mac** — no internet paid transcription services required.  
+Everything runs locally on your Mac for your privacy — no internet paid transcription services required.  
 
-## >> Download the zip file from the **Releases** located on the right side of this page then unzip it. ##
+**Why This Exists?** 
+
+Many videos don’t have subtitles. This tool makes it easy for anyone, **especially Deaf people**, to generate their own accurate subtitles quickly and for free, entirely on their Mac.
 
 ---
 
 ## 🚨 First-Time Setup (Important)
+
+## >> Download the zip file from the **Releases** located on the right side of this page then unzip it. ##
 
 The first time you run `1-Allow-Run.command`, macOS may block it because it’s not from an Apple-signed developer.  
 To allow it to run:
@@ -29,9 +33,9 @@ After this, you won’t need to repeat these steps.
 
 ## ✨ What It Can Do
 
-- 📝 **Transcribe & Translate** — Converts spoken audio into English text. If the audio is in another language, it automatically translates it to English.  
+- 📝 **Transcribe or Translate** — Converts spoken audio into English text. If the audio is in another language, it automatically translates it to English.  
 - 🧠 **Automatic Language Detection** — No need to manually specify the language.  
-- 💬 **Generates Two Outputs** — A `.srt` file and a `_subbed.mp4` file with subtitles embedded.  
+- 💬 **Generates Two Files** — A `.srt` file and a `_subbed.mp4` file with subtitles embedded.  
 - 🧼 **Smart Skipping** — Videos that already have subtitles won’t be processed again.  
 - 💻 **No Installation Required** — All tools are included. You only need to download the model once.
 
@@ -42,7 +46,7 @@ After this, you won’t need to repeat these steps.
 You’ll need:
 
 - A Mac running macOS  
-- At least **3 GB of free space** (to store the model)  
+- At least **3 GB** of free space (to store the model)  
 - A video file (e.g., `.mp4`, `.mov`) to transcribe
 
 ---
@@ -118,8 +122,3 @@ This project bundles these open-source tools:
 - In **VLC** and **QuickTime**, select the subtitle track manually if needed.
 
 ---
-
-## ❤️ Why This Exists
-
-Many videos don’t have subtitles.  
-This tool makes it easy for **anyone**, especially Deaf people, to **generate their own accurate subtitles** quickly and for free, entirely on their Mac.
