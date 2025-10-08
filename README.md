@@ -8,7 +8,7 @@ This simple tool lets you **automatically create free subtitles** for your video
 
 Everything runs **locally on your Mac** — no internet paid transcription services required.  
 
-## Download the zip file from the **Releases** located on the right side of this page then unzip it. ##
+## >> Download the zip file from the **Releases** located on the right side of this page then unzip it. ##
 
 ---
 
